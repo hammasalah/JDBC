@@ -1,0 +1,113 @@
+/* Set background color for the whole window */
+.root {
+    -fx-background-color: #f4f4f4;
+}
+
+/* Style for the VBox */
+.vbox {
+    -fx-alignment: center;
+    -fx-spacing: 20px;
+    -fx-padding: 20px;
+}
+
+/* Style for the header label */
+#welcomeText {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #008080; /* Teal color */
+}
+
+/* Style for the GridPane */
+.grid-pane {
+    -fx-padding: 20px;
+    -fx-background-color: #ffffff;
+    -fx-border-color: #ccc;
+    -fx-border-width: 1px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 10, 0, 0, 5);
+}
+
+/* Style for labels */
+.label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #333;
+}
+
+/* Style for text fields */
+.text-field, .password-field {
+    -fx-pref-width: 250px;
+    -fx-padding: 5px;
+    -fx-border-color: #008080;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+/* Style for the login button */
+#login {
+    -fx-background-color: #008080;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+#login:hover {
+    -fx-background-color: #006666;
+}
+
+#login:pressed {
+    -fx-background-color: #004d4d;
+}
+/* Background color */
+.root {
+    -fx-background-color: #f4f4f4;
+}
+
+/* Style for the GridPane */
+.grid-pane {
+    -fx-padding: 20px;
+    -fx-background-color: #ffffff;
+    -fx-border-color: #ccc;
+    -fx-border-width: 1px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 10, 0, 0, 5);
+}
+
+/* Labels */
+.label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #333;
+}
+
+/* Text fields */
+.text-field, .password-field {
+    -fx-pref-width: 250px;
+    -fx-padding: 5px;
+    -fx-border-color: #008080;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+/* Register Button */
+#registerButton {
+    -fx-background-color: #008080;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+#registerButton:hover {
+    -fx-background-color: #006666;
+}
+
+#registerButton:pressed {
+    -fx-background-color: #004d4d;
+}
+

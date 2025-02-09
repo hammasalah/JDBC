@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="500.0" prefWidth="500.0" spacing="20.0"
+      xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.pifx.RegisterController">
+
+    <padding>
+        <Insets bottom="20" left="20" right="20" top="20" />
+    </padding>
+
+    <!-- Header Label -->
+    <Label text="User Registration" style="-fx-font-size: 20px; -fx-font-weight: bold;" />
+
+    <!-- Registration Form -->
+    <GridPane alignment="CENTER" hgap="10" vgap="10">
+        <padding>
+            <Insets top="10" bottom="10" />
+        </padding>
+
+        <!-- Column Constraints -->
+        <columnConstraints>
+            <ColumnConstraints halignment="RIGHT" minWidth="120" />
+            <ColumnConstraints halignment="LEFT" hgrow="ALWAYS" />
+        </columnConstraints>
+
+        <!-- First Name -->
+        <Label text="First Name:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+        <TextField fx:id="firstName" promptText="Enter your first name" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+        <!-- Last Name -->
+        <Label text="Last Name:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <TextField fx:id="lastName" promptText="Enter your last name" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+        <!-- Age -->
+        <Label text="Age:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+        <TextField fx:id="age" promptText="Enter your age" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+        <!-- Phone Number -->
+        <Label text="Phone Number:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+        <TextField fx:id="phoneNumber" promptText="Enter your phone number" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+        <!-- Email -->
+        <Label text="Email:" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+        <TextField fx:id="email" promptText="Enter your email" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+
+        <!-- Password -->
+        <Label text="Password:" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+        <PasswordField fx:id="password" promptText="Enter your password" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+
+        <!-- Register Button -->
+        <Button fx:id="registerButton" onAction="#onRegisterButtonClick" text="Register" GridPane.columnIndex="1" GridPane.rowIndex="6" maxWidth="Infinity"/>
+        <Button text="View Users" onAction="#onViewUsersClick" GridPane.columnIndex="1" GridPane.rowIndex="7"/>
+
+        <rowConstraints>
+            <RowConstraints minHeight="30" />
+            <RowConstraints minHeight="30" />
+            <RowConstraints minHeight="30" />
+            <RowConstraints minHeight="30" />
+            <RowConstraints minHeight="30" />
+            <RowConstraints minHeight="30" />
+            <RowConstraints minHeight="40" />
+        </rowConstraints>
+    </GridPane>
+
+</VBox>

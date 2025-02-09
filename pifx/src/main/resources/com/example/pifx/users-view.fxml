@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="10.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pifx.UsersController">
+
+    <TableView fx:id="usersTable" prefWidth="500.0">
+        <columns>
+            <TableColumn fx:id="idColumn" prefWidth="50.0" text="ID" />
+            <TableColumn fx:id="firstNameColumn" prefWidth="100.0" text="First Name" />
+            <TableColumn fx:id="lastNameColumn" prefWidth="100.0" text="Last Name" />
+            <TableColumn fx:id="ageColumn" prefWidth="50.0" text="Age" />
+            <TableColumn fx:id="phoneColumn" prefWidth="100.0" text="Phone" />
+            <TableColumn fx:id="emailColumn" prefWidth="150.0" text="Email" />
+        </columns>
+    </TableView>
+
+    <Button onAction="#onBackButtonClick" text="Back" />
+</VBox>

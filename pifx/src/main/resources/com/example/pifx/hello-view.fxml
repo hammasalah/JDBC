@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="447.0" prefWidth="944.0" spacing="20.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pifx.HelloController">
+
+    <padding>
+        <Insets bottom="20" left="20" right="20" top="20" />
+    </padding>
+
+    <!-- Welcome Header -->
+    <Label fx:id="welcomeText" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Welcome! Please Log In" />
+
+    <!-- Login Form -->
+    <GridPane alignment="CENTER" hgap="10" vgap="10">
+        <padding>
+            <Insets bottom="10" top="10" />
+        </padding>
+
+        <!-- Define columns -->
+        <columnConstraints>
+            <ColumnConstraints halignment="RIGHT" minWidth="100" />
+            <ColumnConstraints halignment="LEFT" hgrow="ALWAYS" />
+        </columnConstraints>
+
+        <!-- Username Row -->
+        <Label text="Username:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+        <TextField fx:id="name" promptText="Enter your username" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+        <!-- Password Row -->
+        <Label text="Password:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <PasswordField fx:id="pass" promptText="Enter your password" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+        <!-- Login Button -->
+        <Button fx:id="login" contentDisplay="CENTER" onAction="#onLoginButtonClick" prefHeight="40.0" prefWidth="385.0" text="Login" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" />
+
+        <rowConstraints>
+            <RowConstraints minHeight="30" />
+            <RowConstraints minHeight="30" />
+            <RowConstraints minHeight="40" />
+        </rowConstraints>
+    </GridPane>
+</VBox>
